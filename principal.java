@@ -6,9 +6,9 @@ public class principal
         Scanner sc = new Scanner(System.in);
         metodos m = new metodos();
         int n = 0;
-        System.out.println("Ingrese la dimension del patio")
+        System.out.println("Ingrese la dimension del patio");
         n = sc.nextInt();
-        datos r [] = new datos(n);
+        datos r [] = new datos[n];
         r = m.LlenarRegistros(r);
         r = m.CalcularNuevoPago(r);
         m.MostrarRegistros(r);
